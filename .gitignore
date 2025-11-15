@@ -49,3 +49,11 @@ Thumbs.db
 
 # Git metadata
 .git/
+
+# Ignore Visual Studio build artifacts
+*.exe.recipe
+*.vcxproj.FileListAbsolute.txt
+x64/
+Debug/
+Release/
+
