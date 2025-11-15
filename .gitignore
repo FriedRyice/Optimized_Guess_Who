@@ -1,11 +1,51 @@
-.vs/
-[Bb]in/
-[Oo]bj/
+# Build artifacts
 *.obj
 *.exe
+*.dll
+*.lib
 *.pdb
 *.ilk
+*.idb
 *.log
 *.tlog
 *.lastbuildstate
-*.FileListAbsolute.txt
+*.cache
+*.db
+*.sdf
+*.opensdf
+*.VC.db
+*.VC.opendb
+
+# Intermediate folders
+/x64/
+/Debug/
+/Release/
+/ipch/
+/Optimize-*/
+
+# User-specific files
+*.user
+*.suo
+*.sln.docstates
+*.vscode/
+*.vs/
+
+# Auto-generated files
+*.ncb
+*.aps
+*.pch
+*.res
+*.rpt
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# OS-specific
+Thumbs.db
+.DS_Store
+
+# Git metadata
+.git/
