@@ -6,7 +6,7 @@ using namespace std;
 
 int main() {
 
-	// You can delete this, I was just looking at the CharacterGenerator in action (Rylan)
+	// Example main to look at character generation
     int castSize;
     cout << "How many characters should be in the cast? ";
     cin >> castSize;
