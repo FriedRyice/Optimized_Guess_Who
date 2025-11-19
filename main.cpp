@@ -1,11 +1,33 @@
-// Optimized_Guess_Who.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
+#include <iomanip>
+#include "CharacterGenerator.h"
 
-int main()
-{
-    std::cout << "Hello World!\n";
+using namespace std;
+
+int main() {
+
+	// Example main to look at character generation
+    int castSize;
+    cout << "How many characters should be in the cast? ";
+    cin >> castSize;
+
+    CharacterGenerator generator;
+    generator.generate(castSize);
+
+    // Print header row
+    cout << left << setw(10) << "Name"
+        << setw(10) << "Age"
+        << setw(15) << "Hair"
+        << setw(15) << "Eyes"
+        << setw(20) << "Accessory"
+        << setw(10) << "Gender" << endl;
+
+    cout << string(80, '-') << endl;
+
+    // Print each character in the cast
+    for (const auto& c : generator.getCast()) {
+        cout << c.toString() << endl;
+    }
+
+    return 0;
 }
-
-
