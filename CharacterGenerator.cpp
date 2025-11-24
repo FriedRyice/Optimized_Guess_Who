@@ -1,6 +1,7 @@
 ﻿#include "CharacterGenerator.h"
 #include "Names.h"
 #include <algorithm>
+#include <iostream>
 #include <random>
 
 using namespace std;
@@ -12,7 +13,7 @@ using namespace std;
  * unique characters with randomized attributes and gender‑appropriate names.
  ****************************************************************************/
 
- // Constructor: initialize RNG and distributions
+// Constructor: initialize RNG and distributions
 CharacterGenerator::CharacterGenerator()
     : rng(random_device{}()),
     ageDist(18, 60),
@@ -57,12 +58,19 @@ Character CharacterGenerator::generateCharacter() {
         );
     }
 
-    // Construct and return the new Character
     return Character(chosenName, age, hair, eyes, accessory, gender);
 }
 
-// Public: generate 'count' unique characters
 void CharacterGenerator::generate(int count) {
+    // Reject invalid input
+    if (count < 1 || count > MAX_CAST) {
+        cout << "Invalid number. Please enter a value between 1 and "
+            << MAX_CAST << "." << endl;
+        return; // exit early, caller can re‑prompt
+    }
+
+    cast.clear(); // reset before generating new roster
+
     while (static_cast<int>(cast.size()) < count) {
         Character newChar = generateCharacter();
         if (isUnique(newChar)) {
@@ -70,3 +78,5 @@ void CharacterGenerator::generate(int count) {
         }
     }
 }
+
+

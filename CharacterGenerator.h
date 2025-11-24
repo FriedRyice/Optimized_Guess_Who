@@ -39,11 +39,14 @@ private:
     // Helper function: checks if a new character is unique compared to existing ones
     bool isUnique(const Character& newChar);
 
+    // Maximum cast size constant
+    static const int MAX_CAST = 24;
+
 public:
     // Constructor initializes RNG and distributions
     CharacterGenerator();
 
-    // Generates 'count' number of unique characters
+    // Generates 'count' number of unique characters, capped at MAX_CAST
     void generate(int count);
 
     // Provides read-only access to the generated cast

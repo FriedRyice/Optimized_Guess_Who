@@ -6,15 +6,25 @@ using namespace std;
 
 int main() {
 
-	// Example main to look at character generation
     int castSize;
-    cout << "How many characters should be in the cast? ";
-    cin >> castSize;
-
     CharacterGenerator generator;
-    generator.generate(castSize);
+
+    // Keep prompting until valid input
+    while (true) {
+        cout << "How many characters should be in the cast? (1-24): ";
+        cin >> castSize;
+
+        if (castSize >= 1 && castSize <= 24) {
+            generator.generate(castSize);
+            break; // valid input, exit loop
+        }
+        else {
+            cout << "Invalid number. Please try again." << endl;
+        }
+    }
 
     // Print header row
+    cout << "\n";
     cout << left << setw(10) << "Name"
         << setw(10) << "Age"
         << setw(15) << "Hair"

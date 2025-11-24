@@ -5,6 +5,11 @@ VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Optimized_Guess_Who", "Optimized_Guess_Who.vcxproj", "{D46F88CD-CC50-4B1D-9FE4-77ADAC5E2EDF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{61DCF1CB-769C-405E-A563-64FB6CC19B40}"
+	ProjectSection(SolutionItems) = preProject
+		Game Mechanics.cpp = Game Mechanics.cpp
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
