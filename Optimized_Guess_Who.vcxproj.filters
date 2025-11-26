@@ -24,6 +24,9 @@
     <ClCompile Include="CharacterGenerator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="BubbleSort.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CharacterAttributes.h">
@@ -36,6 +39,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Names.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BubbleSort.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

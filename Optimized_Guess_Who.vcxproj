@@ -127,11 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BubbleSort.cpp" />
     <ClCompile Include="Character.cpp" />
     <ClCompile Include="CharacterGenerator.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BubbleSort.h" />
     <ClInclude Include="Character.h" />
     <ClInclude Include="CharacterAttributes.h" />
     <ClInclude Include="CharacterGenerator.h" />
