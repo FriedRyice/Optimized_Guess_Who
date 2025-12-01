@@ -4,6 +4,7 @@
 #include "Character.h"
 #include "CharacterGenerator.h"
 #include "BubbleSort.h"
+#include "InsertionSort.h"
 
 
 // Number of characters to generate
@@ -400,4 +401,5 @@ int main() {
     }*/
 
     return 0;
+
 }
